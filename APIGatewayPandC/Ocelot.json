@@ -1,0 +1,46 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/customers",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "41848"
+        }
+      ],
+      "UpstreamPathTemplate": "/customers",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/customers/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "41848"
+        }
+      ],
+      "UpstreamPathTemplate": "/customers/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/product",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "43365"
+        }
+      ],
+      "UpstreamPathTemplate": "/prodxx",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+
+
+
+    }
+
+
+
+  ]
+}
